@@ -1,0 +1,79 @@
+.img {
+    background-image: url("../afbeeldingen/camera.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vw;
+
+    background-position: center center;
+}
+body{
+    background-image: url("../afbeeldingen/blurred-7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ddd;
+    margin: 0;
+}
+h1{
+    color: #ccc;
+}
+.masthead {
+    font-family: 'Calistoga', cursive;
+    font-size: 400%;
+    padding: 0%;
+    margin: 0%;
+}
+.marg {
+    margin: 1%;
+}
+.space {
+    margin: 1%;
+    background-color: black;
+}
+.spac {
+    margin: 1%;
+    background-color: white;
+    color: black;
+}
+.heading {
+    font-size: 200%;
+}
+.aside{
+    font-size: 150%;
+}
+.footer{
+    font-size: 250%;
+}
+
+/* de twee-klkoloms layout  */
+@media screen and (min-width: 600px){
+    .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+    
+    section {
+        grid-column: 1/4;
+    }
+    header{
+        grid-column: 1/4;
+    }
+    .border {
+        grid-column: 1/4;
+        /* zelf ook een grid-parent  */
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        
+    }
+}
+    /* de drie-colums layout */
+    @media screen and (min-width: 1400px){
+            .border {
+                grid-column: 1/4;
+                /* zelf ook een grid-parent  */
+                grid-template-columns: 1fr 1fr 1fr;
+                
+            }
+            header {
+                grid-column: 1/4;
+            }
+        }   
